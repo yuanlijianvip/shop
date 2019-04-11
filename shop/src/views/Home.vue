@@ -7,6 +7,7 @@
 
     <!-- 轮播图 -->
     <div class="carousel">
+      <div></div>
       <van-swipe :autoplay="3000">
         <van-swipe-item class="carousel-item" v-for="(item,index) in carouselItem" :key="index">
          <img v-lazy="item.imgSrc" alt="">
