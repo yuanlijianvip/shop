@@ -6,6 +6,7 @@ import Cart from './views/Cart.vue'
 import Profile from './views/Profile'
 import Detail from './views/Detail.vue'
 import FooterBar from './components/FooterBar.vue'
+import Error from './views/Error.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,9 @@ export default new Router({
       path:'/detail/:id',
       name:'detail',
       component:Detail
+    },{
+      path:'*',
+      compontent:Error
     }
   ]
 })
