@@ -26,8 +26,14 @@ export default new Router({
       components:{
         default:Category,
         'footer-bar':FooterBar
+      },
+      //缓存
+      meta:{
+        keepAlive:true
       }
-    },{
+    },
+   
+    {
       path:'/cart',
       name:'cart',
       // component:Cart
